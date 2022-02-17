@@ -39,6 +39,11 @@ public class GamblingSimulator {
 		for (day = 1; day <= 20; day++) {
 			System.out.printf("day %d\n", day);
 			resignDayCheck();
+			if (stake == 50) {
+				daysWonCount++;
+			} else if (stake == -50) {
+				daysLostCount++;
+			}
 		}
 	}
 
