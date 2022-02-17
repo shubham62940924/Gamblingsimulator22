@@ -7,6 +7,8 @@ public class GamblingSimulator {
 	public static final int BET_PER_GAME = 1;
 	public static final int WIN = 1;
 	public static int stake = 0;
+	static int daysWonCount = 0;
+	static int daysLostCount = 0;
 
 	public static void winCheck() {
 		Random random = new Random();
@@ -42,7 +44,7 @@ public class GamblingSimulator {
 
 	public static void main(String[] args) {
 		System.out.println("wlcome to  gambling simulator");
-		resignDayCheck();
+		monthlyWinOrLossCheck();
 
 	}
 
