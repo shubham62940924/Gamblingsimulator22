@@ -32,6 +32,14 @@ public class GamblingSimulator {
 
 	}
 
+	public static void monthlyWinOrLossCheck() {
+		int day;
+		for (day = 1; day <= 20; day++) {
+			System.out.printf("day %d\n", day);
+			resignDayCheck();
+		}
+	}
+
 	public static void main(String[] args) {
 		System.out.println("wlcome to  gambling simulator");
 		resignDayCheck();
